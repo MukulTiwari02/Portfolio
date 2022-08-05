@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="portfolio-head"><a href="Index.html">Portfolio</a></div>
+                <div class="nav-links">
+                    <a class="nav-link" href="#main">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main(Home) section -->
+    <section class="main" id="main">
+        <div class="welcome">
+            <H1 class="main-txt main-l1" main-l1">HI !!</H1>
+            <h2 class="main-txt main-l2">My name is MUKUL TIWARI</h2>
+            <h3 class="main-txt main-l3">I am a WEB DEVELOPER</h3>
+            <br>
+            <a class="main-link link-portfolio-btn" href="#main">Portfolio</a>
+            <a class="main-link link-contact-btn" href="#contact">Contact</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-image"><img id="mukulimg" src="./Images/myimg.jpg" alt=""></div>
+        <div class="about-text">
+            <h1 id="head-l1">ABOUT ME</h1>
+            <h2 id="head-l2">Web Developement Enthusiast</h2><br>
+            <p class="about-me">I am a B.tech first year student of <span class="col-name">NIT Silchar</span>. <br>
+                I have completed my schooling from <span class="sch-name">St. Joseph's School, Greater Noida (Delhi-NCR)</span>.  <br>
+                <br>
+                I am a web development enthusiast and am learning new things in the field everyday. <br>
+                As a beginner I am exploring more and more tech interests and I have picked WebD to learn <br>
+                and I hope to achieve perfection in my WebD Skills. <br>
+                <br>
+                My hobbies are playing guitar, playing First Person Shooter(FPS) games. <br>
+                I love playing basketball and table tennis. <br>
+                <br>
+                My interests include learning more and more about the present and near future technology and  <br>
+                things related to it. <br>
+                <br>
+                I look forward to work with tech enthusiasts like me and add value in the field...............
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="linkedin-link">
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+            <a href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b"
+                title="Click Here" target="_blank">.........................................</a><br>
+        </div>
+        <div class="social-head">
+            <h1 id="social-head">SOCIAL MEDIA</h1>
+        </div>
+        <div class="socials">
+            <a title="Facebook" href="https://www.facebook.com/aman.tiwari.31586526" target="_blank"><img id="fb"
+                    src="./Images/fb-icon.png" alt="IMG"></a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/mukul-tiwari-22bb8223b" target="_blank"><img id="ldin"
+                    src="./Images/linkedin-icon.png" alt="IMG"></a>
+            <a title="Instagram" href="https://www.instagram.com/mukul_tiwari11/" target="_blank"><img id="inst"
+                    src="./Images/insta-icon.png" alt="IMG"></a>
+            <a title="Twitter" href="https://twitter.com/MUKULTI80360779?t=AzbywQ1r90gri2x6hcyYyw&s=03"
+                target="_blank"><img id="tw" src="./Images/twitter-icon.png" alt="IMG"></a>
+        </div>
+        <div id="c-head">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="c-addr" id="c-addr-addr">
+            <h1>Address</h1>
+            <h2>XYZ-XYZ-XYZ</h2>
+        </div>
+        <div class="c-addr" id="c-addr-email">
+            <h1>Email Id.</h1>
+            <h2>mukultiwari2020@gmail.com</h2>
+        </div>
+        <div class="c-addr" id="c-addr-ph">
+            <h1>Phone No.</h1>
+            <h2>000-0000-000</h2>
+        </div>
+        <div class="contact-form">
+            <form autocomplete="off" class="c-form" >
+                <input type="text" id="text-inp" name="Name" placeholder="Enter Name" required>
+                <input type="email" id="email-inp" name="Email" placeholder="Enter Your Email Id" required>
+                <textarea name="" id="ta-inp" cols="30" name="Message" rows="10" placeholder="Enter Message"></textarea>
+                <input title="Submit" class="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>Copyright &copy; <strong>Portfolio by Mukul Tiwari</strong>.All Rights Reserved</div>
+    </footer>
+</body>
+
+</html>
