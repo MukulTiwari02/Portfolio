@@ -37,8 +37,8 @@
     </script>
 </head>
 
-<body>
-
+<body onload="functionx()">
+    <div id="loader"></div>
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -158,6 +158,26 @@
     <footer>
         <div>Copyright &copy; <strong>Portfolio by Mukul Tiwari</strong>.All Rights Reserved</div>
     </footer>
+
+
+    <script>
+
+        const loader = document.getElementById("loader");
+
+        function functionx()
+        {
+            const t = setTimeout(functiony,2500);
+        }
+
+        function functiony(){
+            loader.style.display = "none";
+        }
+            
+        
+
+        
+
+    </script>
 </body>
 
 </html>
